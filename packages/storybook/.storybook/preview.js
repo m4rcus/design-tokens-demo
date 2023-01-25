@@ -7,3 +7,22 @@ export const parameters = {
     },
   },
 }
+
+import { addParameters } from '@storybook/react';
+
+addParameters({
+  stylesheetToggle: {
+    stylesheets: [
+      {
+        id: 'first',
+        title: 'Blickpunkt:Film',
+        url: 'https://raw.githack.com/m4rcus/figma-tokens/main/css/bf.css',
+      },
+      {
+        id: 'second',
+        title: 'Musikwoche',
+        url: 'https://raw.githack.com/m4rcus/figma-tokens/main/css/mw.css',
+      },
+    ],
+  },
+});
